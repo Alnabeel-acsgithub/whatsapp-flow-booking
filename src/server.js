@@ -34,6 +34,11 @@ MIIE...
 -----[REPLACE THIS] END RSA PRIVATE KEY-----```
 */
 
+app.post("/service", async (req,res)=>{
+    console.log(req.body,"req-------");
+    
+})
+
 app.post("/", async (req, res) => {
   if (!PRIVATE_KEY) {
     throw new Error(
